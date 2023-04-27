@@ -12,7 +12,9 @@ module.exports = {
 
     extend: {
       fontFamily: {
-        "sofia" : ['Sofia Sans Condensed'],
+        "dancing": ['Pacifico', 'cursive'],
+        "sofia" : ['Sofia Sans', 'sans-serif'],
+        "cedar": ['Cedarville Cursive', 'cursive']
 
       }
     },

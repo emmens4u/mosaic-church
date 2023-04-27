@@ -1,3 +1,5 @@
+import HeroBanner from "@/components/HeroBanner";
+import HeroBanner2 from "@/components/HeroBanner2";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 
@@ -12,8 +14,10 @@ export default function Home() {
         
       </Head>
       
-      <main>
+      <main className="block overflow-hidden">
         <Navbar/>
+        <HeroBanner/>
+        <HeroBanner2 />
       </main>
     </>
   );

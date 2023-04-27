@@ -17,17 +17,17 @@ const Navbar = () => {
   const handleClick = () => setOpen(!open);
 
   return (
-    <div className="bg-red-200 w-screen h-[110px] lg:h-40 z-10 fixed drop-shadow-md">
-      <div className="px-2 flex  items-center lg:mx-auto justify-between  lg:w-8/12 h-full">
+    <div className="bg-white w-full h-[110px] lg:h-40 z-10 drop-shadow-md absolute">
+      <div className="px-2 flex  items-center lg:mx-auto justify-between lg:w-8/12 h-full">
         <div className="flex items-center">
           <Image
             src="/assets/mosaic-logo.png"
             width={150}
             height={100}
             alt="logo"
-            className=""
+            loading="lazy"
           />
-          <ul className="hidden lg:text-sm tracking-widest  font-sofia gap-4 md:flex mx-28 justify-between">
+          <ul className="hidden text-sm font-semibold tracking-widest font-sofia gap-4 md:flex mx-28 justify-between">
             {Links.map((link) => (
               <li key={link.name}>
                 <Link href={`${link.link}`}>{link.name}</Link>
@@ -35,23 +35,22 @@ const Navbar = () => {
             ))}
           </ul>
         </div>
-        <div className="hidden  md:flex font-sofia text-white gap-2 lg:text-sm mr-5">
+        <div className="hidden  md:flex font-sofia text-white gap-2 lg:text-sm">
           <button className="tracking-widest px-4 py-2  rounded-md bg-[#518185]">
             PRAY
           </button>
           <button className="tracking-widest px-4  rounded-md bg-[#518185]">GIVE</button>
-          <button className="tracking-widest px-4  rounded-md bg-[#ffa42e]"> LIVE STREAM</button>
+          <button className="tracking-widest px-4 whitespace-nowrap  rounded-md bg-[#ffa42e]">LIVE STREAM</button>
         </div>
         <div className=" md:hidden mr-4 text-2xl" onClick={handleClick}>
           {!open ? (
-            <HiMenu size={30} className="" />
+            <HiMenu size={30} className="text-[#518185] " />
           ) : (
-            <HiX size={30} className="" />
+            <HiX size={30} className="text-[#ffa42e]" />
           )}
         </div>
       </div>
-
-      <ul className={!open ? "hidden " : "absolute h-screen  bg-[#2a3737] w-full px-8"}>
+<ul className={!open ? "lg:hidden h-screen bg-[#2a3737] animate__animated animate__slideOutLeft animate__faster" : "absolute h-screen animate__animated animate__slideInLeft animate__fast bg-[#2a3737] w-full px-8" }>
         {Links.map((link) => (
           <li key={link.name} className="text-white font-sofia text-xl py-2  tracking-widest">
             <Link href={`${link.link}`} className="">{link.name}</Link>
@@ -65,6 +64,7 @@ const Navbar = () => {
           <button className="px-8 tracking-widest py-2 rounded-md bg-[#ffa42e]">LIVE STREAM</button>
         </div>
       </ul>
+      
     </div>
   );
 };

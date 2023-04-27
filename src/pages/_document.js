@@ -9,7 +9,7 @@ export default function Document() {
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link
-          href="https://fonts.googleapis.com/css2?family=Sofia+Sans+Condensed:wght@200;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Cedarville+Cursive&family=Pacifico&family=Sofia+Sans:wght@200;500;700&display=swap"
           rel="stylesheet"
         />
       </Head>
