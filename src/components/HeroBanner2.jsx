@@ -6,8 +6,8 @@ import Link from "next/link";
 const HeroBanner2 = () => {
   return (
     <>
-      <div className="relative my-[35rem] px-5 lg:my-[54rem]   lg:flex flex-row bg-green-1 text-white">
-        <div className="lg:px-28 lg:ml-48 lg:w-1/2">
+      <div className="relative mt-[35rem] px-5 lg:mt-[54rem] lg:flex flex-row text-white">
+        <div className="lg:px-28 lg:ml-52 lg:w-1/2">
           <h1 className="text-red-600 font-cedar text-3xl">Nice to meet you.</h1>
           <h3 className="lg:leading-7 leading-7 text-[#2a3737] text-opacity-70 text-justify tracking-wide mt-7 lg:mt-6">
             Welcome to our church! We are a community of believers who gather to
@@ -18,7 +18,7 @@ const HeroBanner2 = () => {
           </h3>
           <VisitBtn />
         </div>
-        <div className="lg:w-1/2 text-[#2a3737] my-9 lg:my-auto text-opacity-70">
+        <div className="lg:w-1/2 text-[#2a3737] my-9 lg:my-auto text-opacity-70r">
           <h1 className="text-xl text-gray-800  font-medium lg:font-normal">Weekly Gatherings</h1>
           <h3 className="lg:mt-8 mt-5">Sundays indoors & via live stream: 8am</h3>
           <h3 className="mt-4">

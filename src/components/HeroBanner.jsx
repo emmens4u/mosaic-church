@@ -11,12 +11,11 @@ const HeroBanner = () => {
           alt="herobanner"
           width={1600}
           height={1100}
-          objectFit="cover"
           sizes="100vw"
           quality={100}
-          className="absolute h-[25rem] lg:h-screen object-cover"
+          className="absolute h-[25rem] lg:h-screen lg:w-screen object-cover"
         />
-        <div className="mx-6 py-[4.5rem] lg:py-60 lg:mx-[21.3rem] absolute  text-white">
+        <div className="mx-6 py-[4.5rem] lg:py-60 lg:mx-[21.3rem] absolute text-white">
           <span className=" font-sofia text-xl ">
             A Church in Lynchburg, VA trying to
           </span>

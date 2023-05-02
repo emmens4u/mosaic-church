@@ -1,5 +1,6 @@
 import HeroBanner from "@/components/HeroBanner";
 import HeroBanner2 from "@/components/HeroBanner2";
+import HeroGrids from "@/components/HeroGrids";
 import Navbar from "@/components/Navbar";
 import Head from "next/head";
 
@@ -18,6 +19,7 @@ export default function Home() {
         <Navbar/>
         <HeroBanner/>
         <HeroBanner2 />
+        <HeroGrids />
       </main>
     </>
   );

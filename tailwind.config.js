@@ -16,6 +16,9 @@ module.exports = {
         "sofia" : ['Sofia Sans', 'sans-serif'],
         "cedar": ['Cedarville Cursive', 'cursive']
 
+      },
+      backgroundImage:{
+        'grid': "url('/assets/gridbackground.jpeg')",
       }
     },
   },
