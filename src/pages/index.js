@@ -2,6 +2,7 @@ import HeroBanner from "@/components/HeroBanner";
 import HeroBanner2 from "@/components/HeroBanner2";
 import HeroGrids from "@/components/HeroGrids";
 import Navbar from "@/components/Navbar";
+import UpcomingEvents from "@/components/UpcomingEvents";
 import Head from "next/head";
 
 export default function Home() {
@@ -20,6 +21,7 @@ export default function Home() {
         <HeroBanner/>
         <HeroBanner2 />
         <HeroGrids />
+        <UpcomingEvents />
       </main>
     </>
   );

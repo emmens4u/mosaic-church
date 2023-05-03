@@ -68,7 +68,7 @@ const HeroGrids = () => {
           height={1100}
           className="my-14 absolute  sm:block hidden object-cover"
         />
-        <div className="lg:py-[12rem] py-10 my-14 relative  px-6 bg-[#518185] lg:bg-transparent h-1/2 lg:w-3/5 mx-auto">
+        <div className="lg:pt-[12rem] py-10 my-14 relative  px-6 bg-[#518185] lg:bg-transparent h-1/2 lg:w-3/5 mx-auto">
           <h1 className="text-center text-3xl text-white font-light my-12 lg:my-6">
             Mosaic Minstries
           </h1>
