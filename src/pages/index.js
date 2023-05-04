@@ -1,3 +1,4 @@
+import Footer from "@/components/Footer";
 import HeroBanner from "@/components/HeroBanner";
 import HeroBanner2 from "@/components/HeroBanner2";
 import HeroGrids from "@/components/HeroGrids";
@@ -22,6 +23,7 @@ export default function Home() {
         <HeroBanner2 />
         <HeroGrids />
         <UpcomingEvents />
+        <Footer />
       </main>
     </>
   );
