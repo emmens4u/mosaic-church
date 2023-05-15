@@ -6,7 +6,7 @@ import 'animate.css'
 
 const Navbar = () => {
   let Links = [
-    { name: "MINISTRIES", link: "/" },
+    { name: "MINISTRIES", link: "/", submenu:[{}] },
     { name: "MESSAGES", link: "/" },
     { name: "EVENTS", link: "/" },
     { name: "ABOUT", link: "/" },

@@ -84,7 +84,7 @@ const HeroGrids = () => {
                 <h2 className="absolute z-30 text-white lg:py-28 py-32 lg:text-sm text-base px-24 whitespace-nowrap lg:font-light font-normal">
                   {image.subtext}
                 </h2>
-                <div class="absolute lg:w-[16.65rem]  w-full lg:h-[12.5rem] h-[16.1rem] bg-gray-800 opacity-60 z-10"></div>
+                <div class="absolute w-full h-full bg-gray-800 opacity-60 z-10"></div>
 
                 <Image
                   src={image.image}

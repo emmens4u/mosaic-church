@@ -6,7 +6,7 @@ import Link from "next/link";
 const HeroBanner2 = () => {
   return (
     <>
-      <div className="relative mt-[35rem] px-5 lg:mt-[54rem] lg:flex flex-row text-white">
+      <div className="relative mt-[35rem] px-5 lg:mt-[54%] lg:flex flex-row text-white">
         <div className="lg:px-28 lg:ml-52 lg:w-1/2">
           <h1 className="text-red-600 font-cedar text-3xl">Nice to meet you.</h1>
           <h3 className="lg:leading-7 leading-7 text-[#2a3737] text-opacity-70 text-justify tracking-wide mt-7 lg:mt-6">
