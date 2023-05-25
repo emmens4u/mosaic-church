@@ -2,15 +2,15 @@ import Link from "next/link";
 import React, { useState } from "react";
 import { HiMenu, HiX } from "react-icons/hi";
 import Image from "next/image";
-import 'animate.css'
+import "animate.css";
 
 const Navbar = () => {
   let Links = [
-    { name: "MINISTRIES", link: "/", submenu:[{}] },
-    { name: "MESSAGES", link: "/" },
-    { name: "EVENTS", link: "/" },
-    { name: "ABOUT", link: "/" },
-    { name: "CONTACT", link: "/" },
+    { name: "MINISTRIES", link: "/minstries", submenu: [{}] },
+    { name: "MESSAGES", link: "/messages" },
+    { name: "EVENTS", link: "/events" },
+    { name: "ABOUT", link: "/about" },
+    { name: "CONTACT", link: "/contact" },
   ];
 
   const [open, setOpen] = useState(false);
@@ -39,32 +39,50 @@ const Navbar = () => {
           <button className="tracking-widest px-4 py-2  rounded-md bg-[#518185]">
             PRAY
           </button>
-          <button className="tracking-widest px-4  rounded-md bg-[#518185]">GIVE</button>
-          <button className="tracking-widest px-4 whitespace-nowrap  rounded-md bg-[#ffa42e]">LIVE STREAM</button>
+          <button className="tracking-widest px-4  rounded-md bg-[#518185]">
+            GIVE
+          </button>
+          <button className="tracking-widest px-4 whitespace-nowrap  rounded-md bg-[#ffa42e]">
+            LIVE STREAM
+          </button>
         </div>
         <div className=" md:hidden mr-4 text-2xl" onClick={handleClick}>
-          {!open ? (
-            <HiMenu size={30} className="text-[#518185] " />
+          {open ? (
+            <HiX size={30} className="text-[#ffa42e] " />
           ) : (
-            <HiX size={30} className="text-[#ffa42e]" />
+            <HiMenu size={30} className="text-[#518185]" />
           )}
         </div>
       </div>
-<ul className={!open ? "lg:hidden h-screen bg-[#2a3737] animate__animated animate__slideOutLeft animate__faster" : "absolute h-screen animate__animated animate__slideInLeft animate__fast bg-[#2a3737] w-full px-8" }>
+      <ul
+        className={
+          open
+            ? "fixed left-0 w-full h-screen px-8 bg-[#2a3737] animate__animated animate__fadeInLeftBig "
+            : "ease-in-out  fixed left-[-100%] animate__animated delay-200 animate__slideOutLeft"
+        }
+      >
         {Links.map((link) => (
-          <li key={link.name} className="text-white font-sofia text-xl py-2  tracking-widest">
-            <Link href={`${link.link}`} className="">{link.name}</Link>
+          <li
+            key={link.name}
+            className="text-white font-sofia text-xl py-2  tracking-widest"
+          >
+            <Link href={`${link.link}`} className="">
+              {link.name}
+            </Link>
           </li>
         ))}
         <div className="left-0 absolute items-start flex flex-col gap-1 px-8  my-4 font-sofia text-xl   text-white">
           <button className="px-8  tracking-widest rounded-md bg-[#518185] py-2">
             PRAY
           </button>
-          <button className="px-8 tracking-widest py-2 rounded-md bg-[#518185]">GIVE</button>
-          <button className="px-8 tracking-widest py-2 rounded-md bg-[#ffa42e]">LIVE STREAM</button>
+          <button className="px-8 tracking-widest py-2 rounded-md bg-[#518185]">
+            GIVE
+          </button>
+          <button className="px-8 tracking-widest py-2 rounded-md bg-[#ffa42e]">
+            LIVE STREAM
+          </button>
         </div>
       </ul>
-      
     </div>
   );
 };
