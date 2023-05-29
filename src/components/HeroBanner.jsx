@@ -1,6 +1,5 @@
 import React from "react";
 import Image from "next/image";
-import VisitBtn from "./visitBtn";
 
 const HeroBanner = () => {
   return (
@@ -37,7 +36,9 @@ const HeroBanner = () => {
               Hope.
             </span>
           </div>
-          <VisitBtn />
+          <button className="bg-[#ffa42e] text-white mt-8 px-8 py-4 text-base font-extrabold font-sofia tracking-wider rounded">
+        VISIT US THIS SUNDAY
+      </button>
         </div>
       </div>
     </>

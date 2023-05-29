@@ -1,6 +1,5 @@
 import React from "react";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import VisitBtn from "./VisitBtn";
 
 const HeroBanner2 = () => {
   return (
@@ -15,7 +14,9 @@ const HeroBanner2 = () => {
             We worship through music, prayer, and teaching, and we seek to
             create an atmosphere of reverence and joy.
           </h3>
-          <VisitBtn />
+          <button className="bg-[#ffa42e] text-white mt-8 px-8 py-4 text-base font-extrabold font-sofia tracking-wider rounded">
+        VISIT US THIS SUNDAY
+      </button>
         </div>
         <div className="lg:w-1/2 text-[#2a3737] my-9 lg:my-auto text-opacity-70r">
           <h1 className="text-xl text-gray-800  font-medium lg:font-normal">Weekly Gatherings</h1>
