@@ -1,7 +1,6 @@
 import React from "react";
-import VisitBtn from "./VisitBtn";
 import { HiOutlineArrowLongRight } from "react-icons/hi2";
-import Link from "next/link";
+import VisitBtn from "./VisitBtn";
 
 const HeroBanner2 = () => {
   return (
