@@ -8,7 +8,7 @@ const Footer = () => {
     <>
       <div>
         <Image
-          src="/assets/footerBanner.jpeg"
+          src="/assets/FooterBanner.jpeg"
           alt="footerBanner"
           width={1500}
           height={300}
