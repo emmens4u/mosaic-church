@@ -1,63 +1,9 @@
 import React from "react";
 import Image from "next/image";
+import { images } from "@/helper";
 
 const HeroGrids = () => {
-  const images = [
-    {
-      id: 1,
-      image: "/assets/mosaicKids.jpeg",
-      text: "Mosaic Kids",
-      subtext: "Child Ministry",
-    },
-    {
-      id: 2,
-      image: "/assets/mosaicPrayer.jpeg",
-      text: "Mosaic Prayer",
-      subtext: "Prayer Team",
-    },
-    {
-      id: 3,
-      image: "/assets/MosaicWorship.jpeg",
-      text: "Worship",
-      subtext: "Worship Team",
-    },
-    {
-      id: 4,
-      image: "/assets/Forge.jpeg",
-      text: "The Forge",
-      subtext: "Men's Ministry",
-    },
-    {
-      id: 5,
-      image: "/assets/theGathering.jpeg",
-      text: "The Gathering",
-      subtext: "Women's Ministry",
-    },
-    {
-      id: 6,
-      image: "/assets/LifeGroups.jpeg",
-      text: "Life Groups",
-      subtext: "Doing Life Together",
-    },
-    {
-      id: 7,
-      image: "/assets/localOutreach.jpeg",
-      text: "Local Outreach",
-      subtext: "Community Ministry",
-    },
-    {
-      id: 8,
-      image: "/assets/mosaicMissions.jpeg",
-      text: "Missions",
-      subtext: "Worldwide Missions",
-    },
-    {
-      id: 9,
-      image: "/assets/youthMinistry.jpg",
-      text: "Pillars",
-      subtext: "Youth Ministry",
-    },
-  ];
+  
   return (
     <>
       <div className="">
@@ -84,7 +30,7 @@ const HeroGrids = () => {
                 <h2 className="absolute z-30 text-white lg:py-28 py-32 lg:text-sm text-base px-24 whitespace-nowrap lg:font-light font-normal">
                   {image.subtext}
                 </h2>
-                <div class="absolute w-full h-full bg-gray-800 opacity-60 z-10"></div>
+                <div class="absolute w-full md:w-[37.5rem] lg:w-full h-full bg-gray-800 opacity-60 z-10"></div>
 
                 <Image
                   src={image.image}
